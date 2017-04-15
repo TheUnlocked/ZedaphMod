@@ -1,0 +1,19 @@
+{   "parent": "block/block",
+    "textures": {
+        "blocktex": "zedaphmod:blocks/cold_gel",
+        "particle": "zedaphmod:blocks/cold_gel"
+    },
+    "elements": [
+        {   "from": [ 0, 0, 0 ],
+            "to": [ 16, 10, 16 ],
+            "faces": {
+                "down":  { "uv": [ 0, 0, 16, 16 ], "texture": "#blocktex", "cullface": "down" },
+                "up":    { "uv": [ 0, 0, 16, 16 ], "texture": "#blocktex" },
+                "north": { "uv": [ 0, 8, 16, 16 ], "texture": "#blocktex", "cullface": "north" },
+                "south": { "uv": [ 0, 8, 16, 16 ], "texture": "#blocktex", "cullface": "south" },
+                "west":  { "uv": [ 0, 8, 16, 16 ], "texture": "#blocktex", "cullface": "west" },
+                "east":  { "uv": [ 0, 8, 16, 16 ], "texture": "#blocktex", "cullface": "east" }
+            }
+        }
+    ]
+}

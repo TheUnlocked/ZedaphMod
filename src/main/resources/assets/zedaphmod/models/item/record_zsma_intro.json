@@ -1,0 +1,6 @@
+{
+    "parent": "zedaphmod:item/default_item",
+    "textures": {
+        "layer0": "zedaphmod:items/record_zsma_intro"
+    }
+}

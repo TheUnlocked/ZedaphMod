@@ -1,0 +1,16 @@
+[
+{
+  "modid": "zedaphmod",
+  "name": "The Zedaph Mod",
+  "description": "A mod that has stuff that Zedaph has asked for at some point.",
+  "version": "1.11.2-0.0.1.1",
+  "mcversion": "",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Unlocked"],
+  "credits": "Unlocked for making the mod, Zedaph for inspiring the mod.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,11 @@
+{
+  "record.zsma_intro": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "zedaphmod:records/zsma_intro",
+        "stream": true
+      }
+    ]
+  }
+}
