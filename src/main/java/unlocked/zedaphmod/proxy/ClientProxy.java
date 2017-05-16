@@ -6,13 +6,15 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
 import net.minecraft.item.ItemBlock;
 import net.minecraftforge.client.model.ModelLoader;
+import net.minecraftforge.fml.client.registry.ClientRegistry;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
 import unlocked.zedaphmod.ModBlocks;
 import unlocked.zedaphmod.ModItems;
+import unlocked.zedaphmod.client.renderer.block.RenderCrystalGrowthChamber;
 import unlocked.zedaphmod.client.renderer.entity.RenderFlashmite;
 import unlocked.zedaphmod.entity.EntityFlashPearl;
 import unlocked.zedaphmod.entity.EntityFlashmite;
-import unlocked.zedaphmod.entity.EntityFlyingSquid;
+import unlocked.zedaphmod.tileentity.TileEntityCrystalGrowthChamber;
 
 public class ClientProxy extends CommonProxy{
 	
@@ -27,8 +29,8 @@ public class ClientProxy extends CommonProxy{
 	}
 	
 	@Override
-	public void registerRenderBlocks(){	
-		
+	public void registerRenderBlocks(){
+        ClientRegistry.bindTileEntitySpecialRenderer(TileEntityCrystalGrowthChamber.class, new RenderCrystalGrowthChamber());
 	}
 	
 	@Override

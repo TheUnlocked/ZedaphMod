@@ -15,6 +15,8 @@ import unlocked.zedaphmod.block.*;
 public class ModBlocks {
 	public static final BlockColdGel COLD_GEL = (BlockColdGel) new BlockColdGel()
             .setRegistryName("cold_gel").setUnlocalizedName("cold_gel");
+    public static final BlockCrystalGrowthChamber CRYSTAL_GROWTH_CHAMBER = (BlockCrystalGrowthChamber) new BlockCrystalGrowthChamber()
+            .setRegistryName("crystal_growth_chamber").setUnlocalizedName("crystal_growth_chamber");
 	
 	
 	@Mod.EventBusSubscriber
@@ -33,17 +35,19 @@ public class ModBlocks {
 		@SubscribeEvent
 		public static void registerBlocks(RegistryEvent.Register<Block> event) {
 			final IForgeRegistry<Block> registry = event.getRegistry();
-			
+
 			registry.registerAll(
-				COLD_GEL
+			        COLD_GEL,
+                    CRYSTAL_GROWTH_CHAMBER
 			);
 		}
 		
 		@SubscribeEvent
 		public static void registerItemBlocks(RegistryEvent.Register<Item> event) {
 			final ItemBlock[] items = {
-				new ItemBlock(COLD_GEL)	
-			};
+				new ItemBlock(COLD_GEL),
+                    new ItemBlock(CRYSTAL_GROWTH_CHAMBER)
+            };
 			
 			final IForgeRegistry<Item> registry = event.getRegistry();
 

@@ -5,7 +5,6 @@ import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
-import net.minecraftforge.event.RegistryEvent.Register;
 import net.minecraftforge.fml.common.registry.EntityRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 import unlocked.zedaphmod.ModBlocks;
@@ -13,8 +12,7 @@ import unlocked.zedaphmod.ModItems;
 import unlocked.zedaphmod.ZedaphMod;
 import unlocked.zedaphmod.entity.*;
 import unlocked.zedaphmod.event.SquidSpawnEventHandler;
-
-import javax.swing.text.html.parser.Entity;
+import unlocked.zedaphmod.tileentity.TileEntityCrystalGrowthChamber;
 
 public class CommonProxy {
 	
@@ -55,10 +53,14 @@ public class CommonProxy {
 	public void registerRenderEntities() {
 		;
 	}
-	
-	public void registerRenderBlocks() { ; }
+
+    public void registerRenderBlocks() { ; }
+
+	public void registerTileEntities(){
+        GameRegistry.registerTileEntity(TileEntityCrystalGrowthChamber.class, new ResourceLocation(ZedaphMod.MODID,"crystal_growth_chamber").toString());
+    }
 
 	public void registerEvents() {
-        MinecraftForge.EVENT_BUS.register(new SquidSpawnEventHandler());
+	    MinecraftForge.EVENT_BUS.register(new SquidSpawnEventHandler());
     }
 }

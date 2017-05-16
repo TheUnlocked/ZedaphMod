@@ -1,0 +1,9 @@
+{
+    "variants": {
+		"facing=north":  { "model": "zedaphmod:crystal_growth_chamber" },
+		"facing=south":  { "model": "zedaphmod:crystal_growth_chamber", "y": 180, "uvlock": false },
+		"facing=east": { "model": "zedaphmod:crystal_growth_chamber", "y": 90, "uvlock": false },
+		"facing=west": { "model": "zedaphmod:crystal_growth_chamber", "y": 270, "uvlock": false },
+		"inventory": { "model": "zedaphmod:crystal_growth_chamber", "y": 0, "uvlock": false }
+    }
+}

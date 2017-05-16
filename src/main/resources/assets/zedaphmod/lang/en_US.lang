@@ -4,6 +4,7 @@ item.record_zsma_intro.name=Music Disc
 item.record.zsma_intro.desc=C418 - zsma
 
 tile.cold_gel.name=Cold Gel
+tile.crystal_growth_chamber.name=Crystal Growth Chamber
 
 entity.flashmite.name=Flashmite
 
