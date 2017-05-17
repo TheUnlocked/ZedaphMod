@@ -21,7 +21,7 @@ import unlocked.zedaphmod.proxy.CommonProxy;
 public class ZedaphMod
 {
     public static final String MODID = "zedaphmod";
-    public static final String VERSION = "1.11.2-0.0.1.2";
+    public static final String VERSION = "1.11.2-0.0.1.3";
     
     @SidedProxy(clientSide = "unlocked.zedaphmod.proxy.ClientProxy", serverSide = "unlocked.zedaphmod.proxy.CommonProxy")
 	public static CommonProxy proxy;

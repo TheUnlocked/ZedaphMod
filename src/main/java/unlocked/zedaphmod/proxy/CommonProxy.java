@@ -2,6 +2,7 @@ package unlocked.zedaphmod.proxy;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -38,12 +39,50 @@ public class CommonProxy {
 				'x', Items.GLOWSTONE_DUST,
 				'P', Items.ENDER_PEARL);
 		
-		GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.RegistrationHandler.getItemBlockFromBlock(ModBlocks.COLD_GEL), 3),
+		GameRegistry.addShapedRecipe(new ItemStack(Item.getItemFromBlock(ModBlocks.COLD_GEL), 3),
 				"iii",
 				"sss",
 				"sss",
 				'i', Blocks.ICE,
 				's', Items.SLIME_BALL);
+
+        GameRegistry.addShapedRecipe(new ItemStack(ModBlocks.CRYSTAL_GROWTH_CHAMBER),
+                "QHQ",
+                "DCG",
+                "QHQ",
+                'Q', Blocks.QUARTZ_BLOCK,
+                'H', Blocks.HOPPER,
+                'D', Blocks.DISPENSER,
+                'C', new ItemStack(ModItems.COMMAND_PLATE, 1, 0),
+                'G', Blocks.GLASS_PANE);
+
+		GameRegistry.addShapedRecipe(new ItemStack(ModItems.COMMAND_PLATE, 1, 0),
+                "BAB",
+                "RDC",
+                "BAB",
+                'B', new ItemStack(Blocks.STAINED_HARDENED_CLAY, 1, 1),
+                'A', Items.QUARTZ,
+                'R', Items.REPEATER,
+                'D', Blocks.REDSTONE_BLOCK,
+                'C', Items.COMPARATOR);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.COMMAND_PLATE, 1, 1),
+                "BAB",
+                "RDC",
+                "BAB",
+                'B', Blocks.SEA_LANTERN,
+                'A', Items.EMERALD,
+                'R', Items.REPEATER,
+                'D', Blocks.REDSTONE_BLOCK,
+                'C', Items.COMPARATOR);
+        GameRegistry.addShapedRecipe(new ItemStack(ModItems.COMMAND_PLATE, 1, 2),
+                "BAB",
+                "RDC",
+                "BAB",
+                'B', Blocks.PURPUR_BLOCK,
+                'A', Items.SHULKER_SHELL,
+                'R', Items.REPEATER,
+                'D', Blocks.REDSTONE_BLOCK,
+                'C', Items.COMPARATOR);
 	}
 
 	public void registerRenderItems() {

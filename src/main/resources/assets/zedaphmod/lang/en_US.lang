@@ -1,5 +1,8 @@
 item.flash_pearl.name=Flash Pearl
 item.record_zsma_intro.name=Music Disc
+item.command_plate.orange.name=Command Plate
+item.command_plate.green.name=Chain Command Plate
+item.command_plate.purple.name=Repeating Command Plate
 
 item.record.zsma_intro.desc=C418 - zsma
 

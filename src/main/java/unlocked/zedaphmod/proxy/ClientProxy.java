@@ -22,7 +22,11 @@ public class ClientProxy extends CommonProxy{
 	public void registerRenderItems(){	
 		ModelLoader.setCustomModelResourceLocation(ModItems.FLASH_PEARL, 0, new ModelResourceLocation(ModItems.FLASH_PEARL.getRegistryName(), "inventory"));
         ModelLoader.setCustomModelResourceLocation(ModItems.RECORD_ZSMA_INTRO, 0, new ModelResourceLocation(ModItems.RECORD_ZSMA_INTRO.getRegistryName(), "inventory"));
-		
+
+        ModelLoader.setCustomModelResourceLocation(ModItems.COMMAND_PLATE, 0, new ModelResourceLocation(ModItems.COMMAND_PLATE.getRegistryName() + "_orange", "inventory"));
+        ModelLoader.setCustomModelResourceLocation(ModItems.COMMAND_PLATE, 1, new ModelResourceLocation(ModItems.COMMAND_PLATE.getRegistryName() + "_green", "inventory"));
+        ModelLoader.setCustomModelResourceLocation(ModItems.COMMAND_PLATE, 2, new ModelResourceLocation(ModItems.COMMAND_PLATE.getRegistryName() + "_purple", "inventory"));
+
 		for (ItemBlock item : ModBlocks.RegistrationHandler.ITEM_BLOCKS){
 			ModelLoader.setCustomModelResourceLocation(item, 0, new ModelResourceLocation(item.getRegistryName(), "inventory"));
 		}
